@@ -8,7 +8,7 @@ provider "aws" {
 module "iam_user" {
   source = "../../modules/iam-user"
 
-  name          = "vasya.pupkin"
+  name          = "shak.kathir.001"
   force_destroy = true
 
   # User "test" has uploaded his public key here - https://keybase.io/test/pgp_keys.asc
@@ -28,7 +28,7 @@ module "iam_user" {
 module "iam_user2" {
   source = "../../modules/iam-user"
 
-  name = "vasya.pupkin4"
+  name = "shak.kathir.002"
 
   create_iam_user_login_profile = false
   create_iam_access_key         = true
